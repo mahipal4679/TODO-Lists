@@ -1,0 +1,235 @@
+.text-color{
+    color:black;
+}
+
+/* Creates a horizontal line when applied to a div */
+.horizontal-line{
+    width: 100%;
+    height: 1px;
+    background-color: red;
+}
+
+/* Creates a vertical line when applied to a div */
+.vertical-line{
+    width: 2px;
+    height: auto;
+    background-color: red;
+   
+}
+
+/* Removes default margin and set background color of page */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: brown;
+    
+}
+
+/* Settings for main container where all data is shown */
+#main-container{
+    background-color: #FDFCFB;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* Customization for app title */
+#app-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 9px;
+    margin: 10px;
+    background-color: lightslategray
+
+}
+
+/* Customization for all labels for input fields */
+label{
+    color:black;
+    text-transform:uppercase;
+    font-family: emoji;
+    font-size: small;
+    font-weight:700;
+    padding-left: 15px;
+
+}
+#desc-input:hover{
+    transform: scale(1.01);
+}
+
+#add-button:hover{
+transform: scale(1.2);
+}
+#delete-button:hover{
+    transform: scale(1.2);
+}
+#desc-limit{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 40ch;
+}
+
+/* Various Customizations for description input box of app*/
+#desc-div{
+    
+    margin-top: 5px;
+}
+
+#desc-input{
+    width: 100%;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 15px;
+    outline: none;
+    background-color: wheat;
+}
+
+
+#desc-input:focus {
+    border: 0px;
+    border-bottom: 2px;
+    border-color: orange;
+    border-style: solid;
+}
+
+/* Settings for data div which contain category and date input fields */
+#data-div{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Various Settings for Category select box in the app */
+#category-div{
+    flex-grow: 1;
+    margin-top: 5px;
+}
+
+#category{
+    width: 100%;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 15px;
+    outline: none;
+    background-color: wheat;
+    color:black;
+    font-weight: bold;
+}
+
+#category:focus {
+    border: 2px solid black;
+}
+
+/* Various Settings for date input box in the app */
+#date{
+    width: 100%;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 15px;
+    outline: none;
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+}
+
+#date:focus {
+    border: 2px solid orange;
+}
+
+#date-div{
+    flex-grow: 1;
+    margin-top: 5px;
+}
+
+/* Various Customization for Action Buttons which contains 'add' and 'delete' buttons */
+#action-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    background-color: black;
+}
+
+#action-buttons button *{
+    color: white;
+}
+
+#action-buttons button{
+    border: none;
+    outline: none;
+    width: 130px;
+    padding: 15px 0px;
+}
+
+#action-buttons button span{
+    text-transform: uppercase;
+}
+
+#add-button{
+    background-color:rgb(107, 101, 101);
+    margin-right: 5px;
+}
+
+#delete-button{
+    background-color:red;
+    margin-left: 5px;
+}
+
+/* Set hover property which is applied to all buttons */
+button:hover{
+    background-color: orange !important;
+}
+
+
+/* Customizations to show all the added tasks list in the app */
+#tasks-list-form{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border: 10px solid white;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.task{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task > *{
+    margin-right: 20px;
+}
+
+.task-data{
+    display: inline-block;
+    width: 70%;
+}
+
+.task-data *{
+    color:rgb(119, 116, 116);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-data p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-data span{
+    font-size: small;
+}
+
+.task button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    color: black;
+    text-transform: uppercase;
+    background-color: darkorange;
+    font-weight: bolder;
+    font-family: emoji;
+}
